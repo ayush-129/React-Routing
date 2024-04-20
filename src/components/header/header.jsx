@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-// jaise html me <a> tag hota hai(ussme pura page reload hota hai), issilye react me 'Link' use krte hai
-// 'NavLink' adds an activeClassName prop, which allows you to specify a CSS class to be applied to the link when it's active. This helps in visually indicating which route is currently active.
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -79,7 +76,7 @@ export default function Header() {
               <li>
                 <NavLink
                   exact
-                  to=""
+                  to="/"
                   activeClassName="text-orange-700"
                   className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                 >
@@ -88,7 +85,7 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to="about"
+                  to="/about"
                   activeClassName="text-orange-700"
                   className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                 >
@@ -97,7 +94,7 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to="contact"
+                  to="/contact"
                   activeClassName="text-orange-700"
                   className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                 >
@@ -106,7 +103,7 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to="leetcode"
+                  to="/leetcode"
                   activeClassName="text-orange-700"
                   className="block py-2 pr-4 pl-3 duration-200 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                 >
@@ -120,4 +117,3 @@ export default function Header() {
     </header>
   );
 }
-
