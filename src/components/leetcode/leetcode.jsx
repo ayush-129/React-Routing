@@ -8,9 +8,10 @@ function Leetcode() {
   return (
     <div>
       <div className="bg-black text-white text-3xl p-4 text-center">
-        {" "}
-        Username: {userid}{" "}
+        ENTER ur username in URL (leetcode/your_id):
+        <div className="font-bold text-yellow-500"> {userid} </div>
       </div>
+
       <div class="flex flex-row-reverse items-center gap-x-6 flex-wrap justify-center">
         <div class="relative font-primary">
           <svg
